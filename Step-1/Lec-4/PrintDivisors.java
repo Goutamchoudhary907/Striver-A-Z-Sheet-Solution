@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PrintDivisors {
  public static int[] printDivisors(int n, int[]size){
@@ -21,11 +22,12 @@ public class PrintDivisors {
     for(int i=1;i<=sqrtN;i++){
         if(n%i==0){
             divisors.add(i);
-        }
-        if(i!= n/i){
-            divisors.add(n/i);
+            if(i!= n/i){
+                divisors.add(n/i);
+            }
         }
     }
+    Collections.sort(divisors);
     return divisors;
  }
  public static void main(String[] args) {
@@ -35,7 +37,7 @@ public class PrintDivisors {
     //     System.out.print(divisors[i] +" ");
     // }
 
-    int number=12;
+    int number=36;
     ArrayList<Integer> divisors = findDivisors(number);
 
         System.out.print("Divisors of " + number + " are: ");
