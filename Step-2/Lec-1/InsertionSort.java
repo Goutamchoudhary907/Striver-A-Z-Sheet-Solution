@@ -1,5 +1,6 @@
 public class InsertionSort {
 
+ // TC = O(n^2)    best case= O(n) , if arr is sorted    
     public static void insertionSort(int arr[], int n){
         for(int i=0;i<n;i++){
             int j=i;
