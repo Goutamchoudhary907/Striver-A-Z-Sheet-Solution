@@ -1,5 +1,9 @@
 public class QuickSort {
-
+/*  TC = O(n * log n)   SC =O(n)
+ worst case= O(n^2)
+ If the partition is done and the last element is the pivot, 
+ then the worst case would be either in the increasing order of the array or in the decreasing order of the array. 
+*/
     static int partition(int arr[], int low , int high){
         int pivot=arr[low];
         int i=low;
