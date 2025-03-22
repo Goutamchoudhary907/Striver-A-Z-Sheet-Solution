@@ -3,7 +3,7 @@
 import java.util.HashSet;
 
 // TC = O(n * log(n) + O(n))     SC=O(n)
-public class ReomveDuplicates {
+public class RemoveDuplicates {
     public static int removeDuplicates(int arr[]) {
         HashSet<Integer> set = new HashSet<>();
         for (int i = 0; i < arr.length; i++) {
